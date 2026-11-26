@@ -1,0 +1,25 @@
+package com.programacion.distribuida.books.db;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+import java.io.Serializable;
+
+@Embeddable
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+public class BookAuthorId implements Serializable {
+
+  @Column(name = "books_isbn")
+  private String bookIsbn;
+
+  @Column(name = "authors_id")
+  private Integer authorId;
+
+}
