@@ -10,3 +10,9 @@ public class CustomersAppMain {
     SpringApplication.run(CustomersAppMain.class, args);
   }
 }
+
+//spring
+//https://docs.spring.io/spring-cloud-commons/reference/spring-cloud-commons/loadbalancer.html#page-title
+
+//quarkus
+//https://smallrye.io/smallrye-stork/latest/

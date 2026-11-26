@@ -36,8 +36,12 @@ dependencies {
     implementation("io.quarkus:quarkus-rest-client")
     implementation("io.quarkus:quarkus-rest-client-jsonb")
 
+
     //Service Discovery
     implementation("io.smallrye.reactive:smallrye-mutiny-vertx-consul-client")
+
+    //Load Balancer
+    implementation("io.quarkus:quarkus-smallrye-stork")
 }
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
